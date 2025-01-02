@@ -7,13 +7,18 @@ this is sample code, use at own risk
 this was made for metric projects, for sure it needs to be modified for imperial and mixed metric projects
 for now only working with FL, WF or LUG connections
 only looking at S1 and S2 ports (not e.g. S3)
-currently the boltcircleradius is considered to belong to the bolt geometry data, but in reality it is a flange parameter, so this might need to change
-many more limitations expected due to so many special cases can exist regarding e.g. connection situation or boltset requirements
+currently the boltcircleradius is considered to belong to the bolt geometry data, but in reality it is a flange parameter, 
+so this might need to change
+many more limitations expected due to so many special cases can exist 
+regarding e.g. connection situation or boltset requirements
 
 Usage:
-compile with MS Visual Studio or similar. Load resulting dll with "netload" command. Execute the code with Plant 3D file opened and the "CreateBoltArray" command from the command line.
-This command will create bolts for all boltsets in the file. You can select single connectors before executing the command, this will only create bolts for the selection.
-Bolts will be created on a new layer called "BoltsAndNuts". Every command call will create a new set of bolts, regardless if bolts already exist or not. 
+compile with MS Visual Studio or similar. Load resulting dll with "netload" command. Execute the code with Plant 3D file opened 
+and the "CreateBoltArray" command from the command line.
+This command will create bolts for all boltsets in the file. You can select single connectors before executing the command, 
+this will only create bolts for the selection.
+Bolts will be created on a new layer called "BoltsAndNuts". Every command call will create a new set of bolts, 
+regardless if bolts already exist or not. 
 You can easily select all bolts in a file by using "Quickselect" by layer.
 
 Configuration:
